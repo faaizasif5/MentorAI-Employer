@@ -1,0 +1,41 @@
+.Login{
+  background-image: url('../../assets/330377667_5313494155419299_51808264110178228_n.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
+  
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+.captcha{
+  padding-bottom: 10px;
+}
+
+button {
+  background: #1d76a0  ;
+  width: 100%;
+  padding-top: 15px;
+  
+}
+p {
+  color: #3f00ff;
+}
+h1{
+  color: #1d76a0 ;
+}
