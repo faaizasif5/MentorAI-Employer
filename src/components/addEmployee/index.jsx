@@ -84,7 +84,6 @@ function Form() {
             >
               <TextField
                 fullWidth
-                // variant="filled"
                 type="text"
                 label={t("auth.firstName")}
                 onBlur={handleBlur}
@@ -97,7 +96,6 @@ function Form() {
               />
               <TextField
                 fullWidth
-                // variant="filled"
                 type="text"
                 label={t("auth.lastName")}
                 onBlur={handleBlur}
@@ -110,7 +108,6 @@ function Form() {
               />
               <TextField
                 fullWidth
-                // variant="filled"
                 type="text"
                 label={t("auth.email")}
                 onBlur={handleBlur}
@@ -130,7 +127,6 @@ function Form() {
                   id="designation-label-name"
                   multiple={false}
                   value={designationName}
-                  // variant="filled"
                   onChange={handleDropdownChange}
                   input={<OutlinedInput label={t("auth.designation")} />}
                   MenuProps={MenuProps}
@@ -152,7 +148,6 @@ function Form() {
               </FormControl>
               <TextField
                 fullWidth
-                // variant="filled"
                 type="password"
                 label={t("auth.password")}
                 onBlur={handleBlur}
@@ -165,7 +160,6 @@ function Form() {
               />
               <TextField
                 fullWidth
-                // variant="filled"
                 type="address"
                 label={t("auth.address")}
                 onBlur={handleBlur}
@@ -178,7 +172,6 @@ function Form() {
               />
               <TextField
                 fullWidth
-                // variant="filled"
                 type="text"
                 label={t("auth.contact")}
                 onBlur={handleBlur}
