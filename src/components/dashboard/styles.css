@@ -15,3 +15,21 @@
   flex-direction: column;
   height: 200px;
 }
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(../../assets/font/Gilroy-Bold.woff) format("truetype"); /* Adjust the path accordingly */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(../../assets/font/Gilroy-Medium.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suprema"; 
+  src: url('../../assets/font/Suprema\ Regular\ Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

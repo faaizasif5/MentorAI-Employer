@@ -1,3 +1,6 @@
+import Avatar1 from "../assets/Avatar/Ellipse 50.png";
+import Avatar2 from "../assets/Avatar/Ellipse 51.png";
+
 const dummyData = [
   {
     employee_id: 1,
@@ -166,6 +169,42 @@ export const project = [
     status: "In Progress",
     no_of_resources: 4,
     resource_list: [1, 4, 3, 5],
+  },
+];
+export const PieChartdata = [
+  { label: "None", value: 12, color: "#5368F0" },
+  { label: "Normal", value: 20, color: "#9D57D5" },
+  { label: "Medium", value: 48, color: "#FEAB00" },
+  { label: "High", value: 20, color: "#dd0000" },
+];
+export const redAlertEmployees = [
+  {
+    id: 1,
+    name: "Jhon Doe",
+    avatar: Avatar2,
+    frequency: "Multiple",
+    date: "13 Dec 2020",
+  },
+  {
+    id: 2,
+    name: "Matt Doe",
+    avatar: Avatar1,
+    frequency: "Regularly",
+    date: "14 Dec 2020",
+  },
+  {
+    id: 3,
+    name: "Eve Joe",
+    avatar: Avatar1,
+    frequency: "Many Times",
+    date: "07 Dec 2020",
+  },
+  {
+    id: 4,
+    name: "Will Smith",
+    avatar: Avatar2,
+    frequency: "Seldom",
+    date: "06 Dec 2020",
   },
 ];
 
