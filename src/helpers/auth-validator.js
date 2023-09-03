@@ -116,11 +116,10 @@ export const ProjectSchema = yup.object().shape({
   name: yup
     .string()
     .matches(
-      Regex.auth.nameRegex,
+      Regex.auth.projectNameRegex,
       validators.validators.auth.projectNameNotValid,
     )
     .required(validators.validators.auth.projectName),
-  start_date: yup.date().required(validators.validators.auth.start_date),
   description: yup
     .string()
     .required(validators.validators.auth.description)
@@ -132,53 +131,4 @@ export const ProjectSchema = yup.object().shape({
       validatorsValue.auth.maxDescriptionLength,
       validators.auth.maxDescriptionLength,
     ),
-
-  // lastname: yup
-  //   .string()
-  //   .matches(Regex.auth.nameRegex, validators.validators.auth.lastNameNotValid)
-  //   .required(validators.validators.auth.lastName),
-  // password: yup
-  //   .string()
-  //   .min(
-  //     validatorsValue.auth.minPasswordLength,
-  //     validators.validators.auth.minPasswordLength,
-  //   )
-  //   .max(
-  //     validatorsValue.auth.maxPasswordLength,
-  //     validators.validators.auth.maxPasswordLength,
-  //   )
-  //   .required(validators.validators.auth.password),
-  // email: yup
-  //   .string()
-  //   .matches(Regex.auth.emailRegex, validators.validators.auth.foliomail)
-  //   .email(validators.validators.auth.emailFormat)
-  //   .required(validators.validators.auth.email),
-  // contact: yup
-  //   .string()
-  //   .matches(Regex.auth.phoneRegExp, validators.validators.auth.phoneNumber)
-  //   .required(validators.validators.auth.phoneNumberRequired)
-  //   .min(
-  //     validatorsValue.auth.minContactLength,
-  //     validators.validators.auth.phoneNumberLength,
-  //   )
-  //   .max(
-  //     validatorsValue.auth.maxContactLength,
-  //     validators.validators.auth.phoneNumberLength,
-  //   ),
-  // cnic: yup
-  //   .string()
-  //   .required(validators.validators.auth.cnicRequired)
-  //   .min(validatorsValue.auth.minCnicLength, validators.auth.cnic)
-  //   .max(validatorsValue.auth.maxCnicLength, validators.auth.cnic),
-  // address: yup
-  //   .string()
-  //   .required(validators.validators.auth.address)
-  //   .min(
-  //     validatorsValue.auth.minAddressLength,
-  //     validators.auth.minAddressLength,
-  //   )
-  //   .max(
-  //     validatorsValue.auth.maxAddressLength,
-  //     validators.auth.maxAddressLength,
-  //   ),
 });

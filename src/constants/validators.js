@@ -9,6 +9,7 @@ export const Regex = {
       /^((\+[1-9]{1,4}[ -]?)|(\([0-9]{2,3}\)[ -]?)|([0-9]{2,4})[ -]?)*?[0-9]{3,4}[ -]?[0-9]{3,4}$/,
     nameRegex: /^(?:[A-Z][a-z'-]{1,20}\s?)+$/,
     cnic: /^\d{13}$/,
+    projectNameRegex: /^[A-Za-z0-9\s\-_]+$/,
     contactNumberRegex: /^\d{11}$/,
     addressRegex: /^[0-9A-Za-z\s.,#-]+$/,
   },

@@ -17,6 +17,7 @@ import { useDispatch } from "react-redux";
 import Header from "../layout/header/index";
 import dummyData from "../../constants/dummydata";
 import { projectInitialValues } from "../../constants/initialvalues";
+import { ProjectSchema } from "../../helpers/auth-validator";
 import { MenuProps } from "../layout/dropdownLayout/dropdownLayout";
 import calculateDuration from "../../helpers/calculateDuration";
 import { handleProjectFormSubmit } from "../common/formSubmitHandler/formSubmitHandler";
@@ -71,7 +72,7 @@ function AddProject() {
       <Formik
         onSubmit={handleFormSubmit}
         initialValues={projectInitialValues}
-        // validationSchema={checkoutSchema}
+        validationSchema={ProjectSchema}
       >
         {({
           values,

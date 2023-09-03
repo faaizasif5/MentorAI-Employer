@@ -12,7 +12,5 @@ export default empinitialValues;
 
 export const projectInitialValues = {
   name: "",
-  start_date: "",
-  end_date: "",
   description: "",
 };
