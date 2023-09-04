@@ -36,7 +36,7 @@ export const StressTitle = {
   fontStyle: "normal",
   fontWeight: 400,
   lineHeight: "normal",
-  marginLeft: "470px",
+  marginLeft: "75vh",
 };
 export const EmployeeBoxStyle = {
   flexShrink: 0,
@@ -142,7 +142,7 @@ export const RedAlertTitleStyle = {
   lineHeight: "normal",
 };
 export const RedAlertContentBoxStyle = {
-  width: "597px",
+  width: "90vh",
   height: "282px",
   flexShrink: 0,
   borderRadius: "19.004px",
@@ -190,7 +190,7 @@ export const RedAlertFrequency = {
 };
 export const AvgEmployeeMoodBoxStyle = {
   marginTop: "92px",
-  width: "597px",
+  width: "90vh",
   height: "282px",
   flexShrink: 0,
   borderRadius: "19.004px",

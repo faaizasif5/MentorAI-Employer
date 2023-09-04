@@ -23,7 +23,7 @@ function EmployeeLoad() {
     <Box
       gridColumn="span 1"
       gridRow="span 1"
-      width="597px"
+      width="90vh"
       height="378px"
       backgroundColor={colors.primary[400]}
       sx={EmployeeBoxStyle}

@@ -9,7 +9,7 @@ function PieChartBox() {
     <Box
       gridColumn="span 1"
       gridRow="span 1"
-      width="597px"
+      width="90vh"
       height="374px"
       sx={PieChartBoxStyle}
     >

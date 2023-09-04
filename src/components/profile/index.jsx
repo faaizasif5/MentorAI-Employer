@@ -25,10 +25,10 @@ function Profile() {
   return (
     <>
       <Header title="Profile Details" subtitle="View Your Profile Details" />
-      <Box sx={{ ml: 9, height: "80vh", marginTop: "100px" }}>
+      <Box sx={{ ml: 12, height: "80vh", marginTop: "100px" }}>
         <Divider
           flexItem
-          sx={{ backgroundColor: "#000000", width: "95%", marginBottom: 2 }}
+          sx={{ backgroundColor: "#000000", width: "156vh", marginBottom: 2 }}
         />
         <Stack direction="row" spacing={4}>
           <Divider
@@ -203,7 +203,7 @@ function Profile() {
         </Stack>
         <Divider
           flexItem
-          sx={{ backgroundColor: "#000000", marginTop: 2, width: "95%" }}
+          sx={{ backgroundColor: "#000000", marginTop: 2, width: "156vh" }}
         />
       </Box>
     </>
