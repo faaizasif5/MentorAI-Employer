@@ -1,4 +1,3 @@
-import { lazy } from "react";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";

@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "semantic-ui-css/semantic.min.css";
 import "./styles.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import validate from "../../helpers/formValidator";
-import { translation } from "../../helpers/i8n-helper";
 import {
   setEmailState,
   setPasswordState,
 } from "../../redux/reducers/authSlice";
 
 function Login() {
-  const { t, i18n } = useTranslation("auth");
+  const { t } = useTranslation("auth");
   const initialValues = { email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});

@@ -7,7 +7,6 @@ import Dashboard from "../dashboard/index";
 import EmployeeList from "../employeeList";
 import AddEmployee from "../addEmployee/index";
 import Profile from "../profile/index";
-import Login from "../login/index";
 import AddProject from "../addProject";
 import ProjectList from "../projectsList";
 import LineManagerList from "../lineManagerPortal/lineManagerList";
