@@ -38,12 +38,6 @@ function ProjectList() {
   const handleDeleteClose = () => {
     setdeleteIsOpen(false);
   };
-  const handleDeleteConfirm = () => {
-    if (rowsData) {
-      deleteAccount(rowsData);
-    }
-    setdeleteIsOpen(false);
-  };
   const getResourceNames = (resourceIds) => {
     if (!Array.isArray(resourceIds)) {
       return "";
@@ -61,15 +55,20 @@ function ProjectList() {
 
     return resourceNamesWithDesignation;
   };
-
   function deleteAccount(id) {
     dispatch(deleteProject(id.id));
   }
+  const handleDeleteConfirm = () => {
+    if (rowsData) {
+      deleteAccount(rowsData);
+    }
+    setdeleteIsOpen(false);
+  };
   useEffect(() => {
     setTableData(project);
   }, []);
   function handleAddClick() {
-    navigate("/addProject");
+    navigate("/dashboard/addProject");
   }
 
   return (

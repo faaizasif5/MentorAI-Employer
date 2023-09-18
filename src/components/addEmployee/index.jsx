@@ -228,6 +228,7 @@ function Form() {
                         id="icon-button-file"
                         type="file"
                       />
+                      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                       <label htmlFor="icon-button-file">
                         <PhotoCameraIcon />
                       </label>

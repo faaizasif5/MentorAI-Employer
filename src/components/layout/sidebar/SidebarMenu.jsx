@@ -105,6 +105,7 @@ function SidebarMenu({ route, showAnimation, isOpen, setIsOpen }) {
             className="menu_container"
           >
             {route.subRoutes.map((subRoute, i) => (
+              // eslint-disable-next-line react/no-array-index-key
               <motion.div variants={menuItemAnimation} key={i} custom={i}>
                 <NavLink to={subRoute.path} className="link">
                   <Tooltip title={subRoute.name}>

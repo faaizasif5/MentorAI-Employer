@@ -2,6 +2,7 @@ import dayjs from "dayjs";
 import { addLineManager } from "../../../redux/reducers/lineManagerSlice";
 import { addEmployee } from "../../../redux/reducers/employeeSlice";
 import { addProject } from "../../../redux/reducers/projectSlice";
+import { registerWithEmailAndPassword } from "../../login/firebase";
 
 const FormSubmitHandler = async (
   values,
@@ -15,6 +16,8 @@ const FormSubmitHandler = async (
 
   const newUserCredentials = {
     employee_id: values.id,
+    name: values.firstname,
+    email: values.email,
     password: values.password,
   };
 
@@ -49,7 +52,7 @@ const FormSubmitHandler = async (
   if (accountDetails.is_line_manager) {
     dispatch(addLineManager(lineManagerDetails));
   }
-
+  registerWithEmailAndPassword(newUserCredentials);
   setSubmit(true);
 };
 

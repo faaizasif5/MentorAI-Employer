@@ -22,7 +22,7 @@ main {
 .sidebar {
   background: rgb(0, 7, 61);
   color: rgb(255, 255, 255);
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 .icon{
   padding-left: 15px;

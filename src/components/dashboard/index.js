@@ -15,6 +15,8 @@ function Dashboard() {
         gridTemplateColumns="repeat(2, 1fr)"
         gridAutoRows="auto"
         gap="15px"
+        justifyContent="center"
+        alignItems="center"
       >
         {/* First Row */}
         <EmployeeLoad />

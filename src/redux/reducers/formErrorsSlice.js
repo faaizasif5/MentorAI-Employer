@@ -1,23 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const formErrorsSlice = createSlice({
-  name: "formErrors",
-  initialState: {
-    email: "",
-    password: "",
-    captcha: "",
-  },
+const initialState = {
+  errors: {},
+};
+
+const authSlice = createSlice({
+  name: "formError",
+  initialState,
   reducers: {
-    setFormError: (state, action) => {
-      state[action.payload.field] = action.payload.message;
+    setErrors: (state, action) => {
+      state.errors = action.payload;
     },
-    clearFormErrors: (state) => {
-      state.email = "";
-      state.password = "";
-      state.captcha = "";
+    clearErrors: (state) => {
+      state.errors = {};
     },
   },
 });
 
-export const { setFormError, clearFormErrors } = formErrorsSlice.actions;
-export default formErrorsSlice.reducer;
+export const { setErrors, clearErrors } = authSlice.actions;
+export default authSlice.reducer;

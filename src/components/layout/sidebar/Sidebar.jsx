@@ -5,6 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+import { logout } from "../../login/firebase";
 import "./sidebar.css";
 import Routes from "../../../config/routes";
 
@@ -29,6 +30,11 @@ function Sidebar({ children }) {
       },
     },
   };
+  function handleClick(e) {
+    if (e === "Logout") {
+      logout();
+    }
+  }
   return (
     <div className="main-container">
       <motion.div
@@ -76,10 +82,11 @@ function Sidebar({ children }) {
             return (
               <NavLink
                 to={route.path}
+                // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 className="link"
-                activeClassName="active"
-                // onClick={() => handleClick(route.name)}
+                activeclassname="active"
+                onClick={() => handleClick(route.name)}
               >
                 <div className="icon">
                   <Tooltip title={route.name}>{route.icon}</Tooltip>

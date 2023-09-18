@@ -32,7 +32,7 @@ function AddDialog({
         style={{
           fontSize: "20px",
           fontWeight: "bold",
-          fontFamily: "Lato",
+          fontFamily: "Gilroy-Bold",
         }}
       >
         {t("employee.assignEmployee")}

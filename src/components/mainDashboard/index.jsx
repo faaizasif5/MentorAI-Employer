@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "../layout/topbar/Topbar";
 import Sidebar from "../layout/sidebar/Sidebar";
@@ -19,28 +19,26 @@ function MainDashboard() {
   const [isSidebar, setIsSidebar] = useState(true);
 
   return (
-    <Router>
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <div className="app">
-            <Sidebar isSidebar={isSidebar} />
-            <main className="content">
-              <Topbar setIsSidebar={setIsSidebar} />
-              <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/employee" element={<EmployeeList />} />
-                <Route path="/addEmployee" element={<AddEmployee />} />
-                <Route path="/lineManager" element={<LineManagerList />} />
-                <Route path="/projects" element={<ProjectList />} />
-                <Route path="/addProject" element={<AddProject />} />
-                <Route path="/profile" element={<Profile />} />
-              </Routes>
-            </main>
-          </div>
-        </ThemeProvider>
-      </ColorModeContext.Provider>
-    </Router>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="app">
+          <Sidebar isSidebar={isSidebar} />
+          <main className="content">
+            <Topbar setIsSidebar={setIsSidebar} />
+            <Routes>
+              <Route path="/home" element={<Dashboard />} />
+              <Route path="/employee" element={<EmployeeList />} />
+              <Route path="/addEmployee" element={<AddEmployee />} />
+              <Route path="/lineManager" element={<LineManagerList />} />
+              <Route path="/projects" element={<ProjectList />} />
+              <Route path="/addProject" element={<AddProject />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
+          </main>
+        </div>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 

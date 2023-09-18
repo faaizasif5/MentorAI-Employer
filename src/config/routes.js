@@ -3,32 +3,38 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import PortraitIcon from "@mui/icons-material/Portrait";
 import TaskIcon from "@mui/icons-material/Task";
+import Logout from "@mui/icons-material/Logout";
 
 const Routes = [
   {
-    path: "/",
+    path: "/dashboard/home",
     name: "Dashboard",
     icon: <HomeOutlinedIcon />,
   },
   {
-    path: "/employee",
+    path: "/dashboard/employee",
     name: "Employee List",
     icon: <PeopleOutlinedIcon />,
   },
   {
-    path: "/lineManager",
+    path: "/dashboard/lineManager",
     name: "Line Manager Portal",
     icon: <SupervisorAccountIcon />,
   },
   {
-    path: "/projects",
+    path: "/dashboard/projects",
     name: "Projects",
     icon: <TaskIcon />,
   },
   {
-    path: "/profile",
+    path: "/dashboard/profile",
     name: "Profile",
     icon: <PortraitIcon />,
+  },
+  {
+    path: "/",
+    name: "Logout",
+    icon: <Logout />,
   },
   // {
   //     name: "Login",

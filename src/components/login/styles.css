@@ -3,6 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .container {
@@ -10,13 +14,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 97vh;
   max-width: 500px;
-  
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
 }
-.container > form {
+.ui.form .field>label{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.formfeilds {
   width: 70%;
   border: 1px solid #dfdfdf;
   padding: 20px;
@@ -31,11 +39,17 @@ button {
   background: #1d76a0  ;
   width: 100%;
   padding-top: 15px;
-  
 }
 p {
-  color: #3f00ff;
+  color: red;
 }
 h1{
   color: #1d76a0 ;
+}
+.GoogleButton{
+  margin-top: 10px;
+}
+.GoogleLogin{
+  justify-content: center;
+  align-items: center;
 }

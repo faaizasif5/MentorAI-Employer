@@ -44,7 +44,7 @@ function EmployeeList() {
     setdeleteIsOpen(false);
   };
   function handleAddClick() {
-    navigate("/addEmployee");
+    navigate("/dashboard/addEmployee");
   }
   return (
     <Box display="flex" flexDirection="column" height="100vh">

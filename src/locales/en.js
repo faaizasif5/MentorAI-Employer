@@ -1,5 +1,6 @@
 const en = {
   loginComponnent: `Login Component`,
+  loginHeading: `Mentor AI Employer Login`,
   auth: {
     email: `Email`,
     firstName: `First Name`,
@@ -18,6 +19,7 @@ const en = {
     logout: `Logout`,
     signup: `Signup`,
     acceptTerms: `Accept Terms & Conditions`,
+    googleSignup: `Sign in with Google 🚀`,
   },
   dashboard: {
     title: `Hello User`,

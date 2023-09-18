@@ -1,7 +1,9 @@
+import { setErrors } from "../redux/reducers/formErrorsSlice";
 import { Regex, validatorsValue } from "../constants/validators";
+import { logInWithEmailAndPassword } from "../components/login/firebase";
 import validators from "../locales/en";
 
-export default function validate(values, capt) {
+export default async function validate(values, capt, dispatch) {
   const errors = {};
   if (!values.email) {
     errors.email = validators.validators.auth.email;
@@ -19,6 +21,22 @@ export default function validate(values, capt) {
   }
   if (capt === false) {
     errors.captcha = validators.validators.auth.captcha;
+  } else {
+    errors.captcha = "";
+  }
+  try {
+    const loginError = await logInWithEmailAndPassword(
+      values.email,
+      values.password,
+    );
+    if (loginError) {
+      errors.firebase = "Email/Password Incorrect";
+    }
+  } catch (error) {
+    // Handle any unexpected errors here
+  }
+  if (Object.keys(errors).length > 0) {
+    dispatch(setErrors(errors));
   }
   return errors;
 }
